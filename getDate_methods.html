@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Judav Delpardo">
+
+        <title>JavaScript with Judav</title>
+            <link rel="stylesheet" type="text/css" href="style.css"  media="screen, projection">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+
+
+  </head>
+
+
+<body>
+    <div id="container">
+        <a href="index.html">Home</a>
+
+
+<p>Remember Methods are functions stored as properties of an object.</p>
+<p>These methods are for getting information from the<em class="codeBlue"> new</em> Date() object.</p>
+
+<ol>
+    <p>To get the date or time you:</p>
+    <li>Set a variable to the <em class="codeBlue"> new</em> Date() object.</li>
+<pre>
+    <em class="codeBlue"> var</em> d = <em class="codeBlue"> new</em> Date();
+</pre>
+<li>Then you apply one of the time/date methods to that variable.</li>
+<pre>
+    document.getElementById(<em class="codeRed">"demo"</em>).innerHTML = d.getTime();
+</pre>
+</ol>
+
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>getFullYear()</td>
+<td>Get the <strong>year</strong> as a four digit number (yyyy)</td>
+</tr>
+<tr>
+<td>getMonth()</td>
+<td>Get the <strong>month</strong> as a number (0-11)</td>
+</tr>
+<tr>
+<td>getDate()</td>
+<td>Get the <strong>day</strong> as a number (1-31)</td>
+</tr>
+<tr>
+<td>getHours()</td>
+<td>Get the <strong>hour</strong> (0-23)</td>
+</tr>
+<tr>
+<td>getMinutes()</td>
+<td>Get the <strong>minute</strong> (0-59)</td>
+</tr>
+<tr>
+<td>getSeconds()</td>
+<td>Get the <strong>second</strong> (0-59)</td>
+</tr>
+<tr>
+<td>getMilliseconds()</td>
+<td>Get the <strong>millisecond</strong> (0-999)</td>
+</tr>
+<tr>
+<td>getTime()</td>
+<td>Get the time (milliseconds since January 1, 1970)</td>
+</tr>
+<tr>
+<td>getDay()</td>
+<td>Get the weekday as a number (0-6)</td>
+</tr>
+</tbody></table>
+
+<h1 id="dateDemo">Pratice putting date and time here, Fool!!!!</h1>
+
+
+<script type="text/javascript">
+    var q = new Date();
+    document.getElementById("dateDemo").innerHTML = q.getFullYear();
+
+</script>
+<p>Applying the toDateString() method is useful.</p>
+<pre>document.getElementById("demo").innerHTML = new Date().toDateString();</pre>
+
+
+
+
+
+                <!-- end of container div --></div>
+               </body>
+               </html>

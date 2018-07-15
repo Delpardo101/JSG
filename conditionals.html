@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Judav Delpardo">
+
+        <title>JavaScript with Judav</title>
+            <link rel="stylesheet" type="text/css" href="style.css"  media="screen, projection">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+
+
+  </head>
+
+
+<body>
+    <div id="container">
+        <a href="index.html">Home</a>
+
+
+<h1>Conditional Statements</h1>
+
+        <p>Conditional statements are used to perform different actions based on different conditions.</p>
+
+
+        <p>Very often when you write code, you want to perform different actions for different decisions.</p>
+
+        <p>You can use conditional statements in your code to do this.</p>
+
+        <p>In JavaScript we have the following conditional statements:</p>
+
+
+<h2 class="heading">The if Statement</h2>
+<ul>
+            <li>Use <em class="codeRed">if</em> to specify a block of code to be executed, if a (the 1st and only test condition) specified condition is true</li>
+<pre>
+
+            <em class="codeBlue">if</em> (<em class="codeBlue">new</em> Date().getHours() < 18) {
+                document.getElementById("demo").innerHTML = "Good day!";
+            }
+<b>Note:</b> the <em class="codeBlue"> "new</em> Date()" <a style="text-decoration: none;" href="getDate_methods.html">Object</a> and the ".getHours()" method.
+</pre>
+<h3 class="assingment">Assignment 1:</h3>Use the if statement to output some text if 5 is greater than 2.<br>
+<b class="resultArea" id="cRA1">Test Area</b>
+
+<script>
+
+
+</script>
+<h2 class="heading">else</h2>
+            <li>Use <em class="codeRed">else</em> to specify a block of code to be executed, if the same condition is false. So if (the 1st and only test condition) is false put in <em class="codeRed"> else</em> as the thing to do next.</li>
+            <pre>
+                <em class="codeBlue">function</em> myFunction() {
+                    <em class="codeBlue">var</em> hour = <em class="codeBlue">new Date().getHours();
+                    var</em> greeting;
+                    <em class="codeBlue">if</em> (hour < 18) {
+                        greeting = <em class="codeRed">"Good day"</em>;
+                    } <em class="codeBlue">else</em> {
+                        greeting = <em class="codeRed">"Good evening"</em>;
+                    }
+                    document.getElementById(<em class="codeRed">"demo"</em>).innerHTML = greeting;
+                }
+            </pre>
+
+
+        <h3 class="assingment">Assignment 2 :</h3>Create a script that gives a good mornig or good evening message based on the time of day
+            1) get the time of day.<br>
+            2) get the greeting<br>
+<b class="resultArea" id="cRA2">Test Area</b>
+<h2 class="heading">else if</h2>
+            <li>Use <em class="codeRed">else if</em> to specify a new condition to test, if the first condition is false.</li>
+            so if the 1st conditon is false, and you want to test another condition you use<em class="codeRed"> else if</em>
+            <pre>
+                <em class="codeBlue">function</em> myFunction() {
+                    <em class="codeBlue">var</em> hour = <em class="codeBlue">new Date().getHours();
+                    var</em> greeting;
+                    <em class="codeBlue">if</em> (hour < 10) {
+                        greeting = <em class="codeRed">"Good Morning"</em>;
+                    } <em class="codeBlue">else if</em>( hour < 20) {
+                        greeting = <em class="codeRed">"Good day"</em>;
+                    } <em class="codeBlue">else</em> {
+                        greeting = <em class="codeRed">"Good evening"</em>;
+                    }
+                    document.getElementById(<em class="codeRed">"demo"</em>).innerHTML = greeting;
+                }
+            </pre>
+
+            <h3 class="assingment">Assignment 3 :</h3>Create a script that gives a good mornig or good evening message based on the time of day
+                1) get the time of day.
+                2) get the greeting
+    <b class="resultArea" id="cRA3">Test Area</b>
+
+<h2 class="heading">The switch statement</h2>
+    <p>The <em class="codeRed">switch</em> statement is used to perform different actions based on different conditions.</p>
+
+<ul>
+    Use <em class="codeRed">switch</em> to specify many alternative blocks of code to be executed.
+<p>This is how it works:</p>
+
+    <li>The switch expression is evaluated once.</li>
+    <li>The value of the expression is compared with the values of each case.</li>
+    <li>If there is a match, the associated block of code is executed.</li>
+
+</ul>
+
+<p id="test">test here</p>
+<p id="test2">test here</p>
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript">
+        var time1 = new Date().getHours();
+document.getElementById("test").innerHTML = time1;
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+        <!-- end of container div --></div>
+       </body>
+       </html>

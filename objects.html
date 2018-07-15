@@ -1,0 +1,165 @@
+
+
+
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Judav Delpardo">
+
+        <title>JavaScript with Judav</title>
+            <link rel="stylesheet" type="text/css" href="style.css"  media="screen, projection">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+
+
+  </head>
+  <a href="index.html">Home</a>
+  <a href="index.html">Home</a>
+  <body>
+      <div id="container">
+          <a href="index.html">Home</a>
+          <a href="index.html">Home</a>
+          <a href="index.html">Home</a>
+          <a href="index.html">Home</a>
+
+
+<h3><a name="objectDefintions">Object Defintions </h3></a>
+     Objects are variables too. Objects Usually contain many values.
+
+       The values are written as name : value pairs (name and value separated by a colon).
+
+       <pre>var person = {
+                firstName : "John",
+                lastName  : "Doe",
+                age       : 50,
+                eyeColor  : "blue"
+            };
+       </pre>
+<h3><a name="objectProperties">Object Properties</h3></a>
+
+<p>Properties are the values associated with a JavaScript object. Properties are the most important part of any JavaScript object.
+
+A JavaScript object is a collection of unordered properties.
+
+Properties can usually be changed, added, and deleted, but some are read only.</p>
+<p>There are two different ways to access an object property:</p>
+<p>the perfered way is .property</p>
+<pre>
+var person = {
+    firstname:"John",
+    lastname:"Doe",
+    age:50,
+    eyecolor:"blue"
+};
+document.getElementById("demo").innerHTML =
+person.firstname + " is " + person.age + " years old.";
+</pre>
+
+
+
+
+
+<h3><a name=">objectMethods">Object Methods</h3></a>
+<p>in JavaScript a method is a function stored as a property of an object, another way of saying that
+    is a method is an objects property containing a function defination</p>
+
+
+
+<h3><a name=">objectConstructors">Object Constructors</h3></a>
+<p>an object constructor is a blueprint" for creating many objects of the same "type".<br>
+Objects of the same type are created by calling the constructor function with the new keyword:</p>
+<pre>// Constructor function for Person objects
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+
+// Create a Person object
+var myFather = new Person("John", "Doe", 50, "blue");
+
+// Display age
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.age + ".";
+</pre>
+
+<h3><a name="objectPrototypes">Object Prototypes</h3></a>
+All JavaScript objects inherit properties and methods from a prototype.
+<h4>Prototype Inheritance</h4>Prototype Inheritance
+<ul>
+    <li>All JavaScript objects inherit properties and methods from a prototype.</li>
+
+    <li>Date objects inherit from Date.prototype. Array objects inherit from
+        Array.prototype. Person objects inherit from Person.prototype.</li>
+
+    <li>The Object.prototype is on the top of the prototype inheritance chain:</li>
+
+    <li>Date objects, Array objects, and Person objects inherit from Object.prototype.</li>
+</ul>
+<pre>
+
+    function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+    }
+    Person.prototype.nationality = "English";
+
+    var myFather = new Person("John", "Doe", 50, "blue");
+    document.getElementById("demo").innerHTML =
+    "My father is " + myFather.nationality;
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p id="display">blah</p>
+<script>
+
+       var car = {
+                type:"Fiat", model:"500", color:"White", engine: "V6", year: "1999"
+                };
+var killer = function zuz() {
+    document.write(car.engine + ", " + car.color + ", " + car.year);
+    document.getElementById("display").innerHTML = "<b>Zuzana is suck a little fucking bitch she fucking sucks</b>".toUpperCase();
+}();
+
+</script>
+<!-- <script>
+var iKnow = function kung() {
+    console.log("foo");
+}
+
+iKnow();
+// document.write(iKnow);
+</script> -->
+
+
+</script>
+<!-- end of container div --></div>
+</body>
+</html>

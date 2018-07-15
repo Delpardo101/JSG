@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Judav Delpardo">
+    <title>Functions</title>
+            <link rel="stylesheet" type="text/css" href="style.css"  media="screen, projection">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+
+
+  </head>
+
+
+<body>
+    <div id="container">
+<a href="index.html">Home</a>
+
+<h1>Functions</h1>
+<p>A function is a block of code designed to perform a particular task.<br>
+Most of the time functions are defined wtih the function keyword</p>
+<p>This example called "multipleNow" which performs a calculation and returns the result:</p>
+<pre>
+var x = multipleNow(4, 3);
+document.getElementById("demo").innerHTML = x;
+
+function multipleNow(a, b) {
+    return a * b;
+}
+</pre>
+
+<script type="text/javascript">
+document.getElementById("myBtn").addEventListener("click", multipleNow);
+function multipleNow(a, b) {
+    return a * b;
+}
+
+multipleNow();
+
+</script>
+<textarea name="multipleNow()" rows="8" cols="80"></textarea>
+<button id="myBtn">Try it</button><p id="demo"></p>
+
+
+
+
+<h3><a name="anonymousClosure">Anonymous Closures(Self-Executing Functions)</a></h3>
+<p>
+    This is a self executing function or and anonymous closure:
+    Self executing functions(anonymous closures) don't have a name and any variables you create inside it are only goin gto be accessible inside the function.
+</p>
+    <pre>
+    (function(){
+      console.log("foo");
+    });();
+    </pre>
+<ul>
+<li>|When you add (); to the end of a function the function executes itself</li>
+<li>The parenthesis change the code from a function declaration to a function expression. </li>
+<li>When you add (); JavaScript thinks of the function as a formula that needs to be processed.</li>
+<li>This is a self executing function or and anonymous closure:</li>
+<li>Self executing functions(anonymous closures) don't have a name and any variables you create inside it are only goin gto be accessible inside the function </li>
+<li>n other words, what we're doing here is we're closing the variables inside this function from the rest of the world, and that's why it's called a closure.
+
+This pattern is really important when you work with certain JavaScript constructs, like modules. </li>
+</ul>
+
+
+<h3><a name="scopeAndHoisting">Hoisting and Variable Scope</a></h3>
+<p>
+    Scope refers to when and where within your code a variable exists and retains a certain value.
+</p>
+
+<p>hoisted refers to the fact that during this browser processing phase, JavaScript actually rearranges your variable declarations and moves them to the top of their functional scope.
+</p>
+
+<ul>
+
+    <li>In most programming languages, variables have a block scope. Variables created in a code block or inside curly braces exist only inside those curly braces. They cease to exist outside
+        them.</li>
+    <li>In JavaScript, we have something different called function scope. </li>
+    <li>Any variables created with the keyword var are local to the function that they were created in. </li>
+    <li>A variable created in a parent function lives also in the child function as well.</li>
+    <li>Variable Scope and Hoisting</li>
+    <li>Scope: Like and death of a variable</li>
+    <li>Block Scope: Variables live within {}</li>
+    <li>Function Scope: variables live in functions</li>
+    <li>The scope chain</li>
+    <li>Global variables are dangerous - cause a lot of bugs </li>
+    <li>When u use is makes sure you functions are kept local, not using var makes your function global. </li>
+    <li>Variable definitions are hoisted meaning that during this browser processing phase, JavaScript actually rearranges your variable declarations and moves them to the top of their functional scope. That means that variables can actually exist before you use them.
+    <li>Make sure that you declare all of your variables at the top of the function scope.</li>
+<li>    Make sure you put all of your functions, if you can, also at the top of the function scope. </li>
+
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Judav Delpardo">
+
+        <title>JavaScript with Judav</title>
+            <link rel="stylesheet" type="text/css" href="style.css"  media="screen, projection">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+
+
+  </head>
+
+
+<body>
+    <div id="container">
+        <a href="index.html">Home</a>
+        <a href="index.html">Home</a>
+        <a href="objects.html">Objects</a>
+<h1>The This Keyword</h1>
+<pre>
+        <p>The this function returns the object that contains it.<br>
+             the thing called this is the object that "owns" the code.</p>
+        // Creates the object "person":
+        var person = {
+            firstName: "John",
+            lastName : "Doe",
+            id       : 5566,
+            fullName : function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        // Display data from the "person" object:
+        document.getElementById("demo").innerHTML = person.fullName();
+</pre>
+
+<p>In a function definition, this refers to the "owner" of the function.
+
+In the example above, this refers to the person object.
+
+The person object "owns" the fullName method.</p>
+        <p>Remember a method is a function stored as the properties of an object.</p>
+        <!-- end of container div --></div>
+       </body>
+       </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Judav Delpardo">
+
+        <title>JavaScript with Judav</title>
+            <link rel="stylesheet" type="text/css" href="style.css"  media="screen, projection">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+
+
+  </head>
+
+
+<body>
+    <div id="container">
+
+
+
+<div class="row">
+    <p>JavaScript is the client side scripting language for all websites</p>
+<h1>JavaScrip Essential Training</h1>
+    <h2>JavaScript Essential Concepts</h2>
+    <a href="what_everything_is.html">What everything is</a>
+<h3>Keywords</h3>
+<a href="keyword_this.html"><p>this</p></a>
+
+   <button class="accordion"><h2>Functions</h2><p>A Function in JavaScript is a block of code designed to perform a particular tasks.</p>
+       <pre>
+       // this part of the code creates the function called myFunction
+       function myFunction(p1, p2) {
+           return p1 * p2;
+       }
+       // this part of the code passes arguments to  and displayes the function myFunction
+       document.getElementById("demo").innerHTML = myFunction(4, 3);
+
+        </pre>
+ </button>
+<div class="panel">
+         <a href="functions.html/#anonymousClosure">Self Executing Sunction(Anonymous Closure)</a>
+         <a href="functions.html/#scopeAndHoisting"> Hoisting and Variable Scope</a>
+     <p></p>
+
+ </div>
+
+   <button class="accordion"><h2>Objects</h2>
+       <p>In JavaScript Objects are clusters of related data usually in the form of variables that contain many values</p>
+            the excample below first creates an object, then displays some data from that object.
+            <pre>
+       // Creates an object:
+       var car = {type:"Fiat", model:"500", color:"white", engine: "V6"};
+
+       // Displays some data from the object:
+       document.getElementById("demo").innerHTML = car.type;
+           </pre>
+  </button>
+   <div class="panel">
+       <a href="objects.html/#objectDefintions">Object Defintions</a>
+    <a href="objects.html/#objectProperties">Object Properties</a>
+        <a href="objects.html/#objectMethods">Object Methods</a>
+         <a href="objects.html/#objectConstructors">Object Constructors</a>
+         <a href="objects.html/#objectPrototypes">Object Prototypes</a>
+   </div>
+<!-- end row div --></div>
+
+
+
+   <button class="accordion"><h2>Loops</h2></button>
+  <div class="panel">
+    <p>Lorem ipsum...</p>
+  </div>
+  <button class="accordion"><h2>Conditions</h2>
+<p>Conditional statements are used to perform different actions based on different condtions.</p>
+</button>
+
+ <div class="panel">
+   <p> <a href="conditionals.html">Contitionals</p>
+ </div>
+
+ <script src="accordionIndex.js">
+
+ </script>
+ <!-- end of container div --></div>
+</body>
+</html>
