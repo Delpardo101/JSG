@@ -32,24 +32,33 @@
         <p>In JavaScript we have the following conditional statements:</p>
 
 
-<h2 class="heading">The if Statement</h2>
-<ul>
-            <li>Use <em class="codeRed">if</em> to specify a block of code to be executed, if a (the 1st and only test condition) specified condition is true</li>
-<pre>
-
-            <em class="codeBlue">if</em> (<em class="codeBlue">new</em> Date().getHours() < 18) {
-                document.getElementById("demo").innerHTML = "Good day!";
-            }
-<b>Note:</b> the <em class="codeBlue"> "new</em> Date()" <a style="text-decoration: none;" href="getDate_methods.html">Object</a> and the ".getHours()" method.
-</pre>
+            <h2 class="heading">The if Statement</h2>
+                <ul>
+                    <li>Use <em class="codeRed">if</em> to specify a block of code to be executed, if a (the 1st and only test condition) specified
+                        condition is true</li>
+                            <pre>
+                                <em class="codeBlue">if</em> (<em class="codeBlue">new</em> Date().getHours() < 18) {
+                                    document.getElementById("demo").innerHTML = "Good day!";
+                                }
+                                    </pre>
+                                    <b>Note:</b> <em class="codeBlue"> "new</em> Date()" is an <a style="text-decoration: none;" href="getDate_methods.html">
+                                               Object</a> and ".getHours()" is a method.
 <h3 class="assingment">Assignment 1:</h3>Use the if statement to output some text if 5 is greater than 2.<br>
 <b class="resultArea" id="cRA1">Test Area</b>
-
 <script>
 
 
+
+
+
 </script>
-<h2 class="heading">else</h2>
+
+
+
+
+
+
+    <h2 class="heading">else</h2>
             <li>Use <em class="codeRed">else</em> to specify a block of code to be executed, if the same condition is false. So if (the 1st and only test condition) is false put in <em class="codeRed"> else</em> as the thing to do next.</li>
             <pre>
                 <em class="codeBlue">function</em> myFunction() {
@@ -65,11 +74,16 @@
             </pre>
 
 
-        <h3 class="assingment">Assignment 2 :</h3>Create a script that gives a good mornig or good evening message based on the time of day
+    <h3 class="assingment">Assignment 2 :</h3>Create a script that gives a good mornig or good evening message based on the time of day
             1) get the time of day.<br>
             2) get the greeting<br>
 <b class="resultArea" id="cRA2">Test Area</b>
-<h2 class="heading">else if</h2>
+
+
+
+
+
+    <h2 class="heading">else if</h2>
             <li>Use <em class="codeRed">else if</em> to specify a new condition to test, if the first condition is false.</li>
             so if the 1st conditon is false, and you want to test another condition you use<em class="codeRed"> else if</em>
             <pre>
@@ -87,24 +101,61 @@
                 }
             </pre>
 
-            <h3 class="assingment">Assignment 3 :</h3>Create a script that gives a good mornig or good evening message based on the time of day
-                1) get the time of day.
-                2) get the greeting
+            <h3 class="assingment">Assignment 3 :</h3>
+            <p>Create a script that gives a good mornig or good evening message based on the time of day.</p>
+                1) get the time of day.<br>
+                2) get the greeting<br>
     <b class="resultArea" id="cRA3">Test Area</b>
 
-<h2 class="heading">The switch statement</h2>
-    <p>The <em class="codeRed">switch</em> statement is used to perform different actions based on different conditions.</p>
 
-<ul>
-    Use <em class="codeRed">switch</em> to specify many alternative blocks of code to be executed.
-<p>This is how it works:</p>
+
+
+
+
+
+
+
+        <h2 class="heading">The switch statement</h2>
+            <p>The <em class="codeRed">switch</em> statement is used to perform different actions based on different conditions.</p>
+            <ul>
+                Use <em class="codeRed">switch</em> to specify many alternative blocks of code to be executed.
+                <p>This is how it works:</p>
 
     <li>The switch expression is evaluated once.</li>
     <li>The value of the expression is compared with the values of each case.</li>
     <li>If there is a match, the associated block of code is executed.</li>
 
 </ul>
+<pre>
 
+    input id="myInput" type="text" value="Apple"
+button onclick="checkFruit()">Check Fruit/button
+    p id="demo">/p
+
+
+    function checkFruit() {
+      var text;
+      var fruits = document.getElementById("myInput").value;
+
+      switch(fruits) {
+        case "Banana":
+          text = "Banana is good!";
+          break;
+        case "Orange":
+          text = "I am not a fan of orange.";
+          break;
+        case "Apple":
+          text = "How you like them apples?";
+          break;
+        default:
+          text = "I have never heard of that fruit.";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+
+
+</pre>
+blah hlah
 <p id="test">test here</p>
 <p id="test2">test here</p>
 

@@ -1,0 +1,147 @@
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b5fe66e[m
+[1m--- /dev/null[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1,3 @@[m
+[32m+[m
+[32m+[m[32mshit.txt^[m
+[32m+[m[32mshit.txt[m
+[1mdiff --git a/conditionals.html b/conditionals.html[m
+[1mindex 27186c5..8a722bf 100644[m
+[1m--- a/conditionals.html[m
+[1m+++ b/conditionals.html[m
+[36m@@ -32,24 +32,33 @@[m
+         <p>In JavaScript we have the following conditional statements:</p>[m
+ [m
+ [m
+[31m-<h2 class="heading">The if Statement</h2>[m
+[31m-<ul>[m
+[31m-            <li>Use <em class="codeRed">if</em> to specify a block of code to be executed, if a (the 1st and only test condition) specified condition is true</li>[m
+[31m-<pre>[m
+[31m-[m
+[31m-            <em class="codeBlue">if</em> (<em class="codeBlue">new</em> Date().getHours() < 18) {[m
+[31m-                document.getElementById("demo").innerHTML = "Good day!";[m
+[31m-            }[m
+[31m-<b>Note:</b> the <em class="codeBlue"> "new</em> Date()" <a style="text-decoration: none;" href="getDate_methods.html">Object</a> and the ".getHours()" method.[m
+[31m-</pre>[m
+[32m+[m[32m            <h2 class="heading">The if Statement</h2>[m
+[32m+[m[32m                <ul>[m
+[32m+[m[32m                    <li>Use <em class="codeRed">if</em> to specify a block of code to be executed, if a (the 1st and only test condition) specified[m
+[32m+[m[32m                        condition is true</li>[m
+[32m+[m[32m                            <pre>[m
+[32m+[m[32m                                <em class="codeBlue">if</em> (<em class="codeBlue">new</em> Date().getHours() < 18) {[m
+[32m+[m[32m                                    document.getElementById("demo").innerHTML = "Good day!";[m
+[32m+[m[32m                                }[m
+[32m+[m[32m                                    </pre>[m
+[32m+[m[32m                                    <b>Note:</b> <em class="codeBlue"> "new</em> Date()" is an <a style="text-decoration: none;" href="getDate_methods.html">[m
+[32m+[m[32m                                               Object</a> and ".getHours()" is a method.[m
+ <h3 class="assingment">Assignment 1:</h3>Use the if statement to output some text if 5 is greater than 2.<br>[m
+ <b class="resultArea" id="cRA1">Test Area</b>[m
+[31m-[m
+ <script>[m
+ [m
+ [m
+[32m+[m
+[32m+[m
+[32m+[m
+ </script>[m
+[31m-<h2 class="heading">else</h2>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    <h2 class="heading">else</h2>[m
+             <li>Use <em class="codeRed">else</em> to specify a block of code to be executed, if the same condition is false. So if (the 1st and only test condition) is false put in <em class="codeRed"> else</em> as the thing to do next.</li>[m
+             <pre>[m
+                 <em class="codeBlue">function</em> myFunction() {[m
+[36m@@ -65,11 +74,16 @@[m
+             </pre>[m
+ [m
+ [m
+[31m-        <h3 class="assingment">Assignment 2 :</h3>Create a script that gives a good mornig or good evening message based on the time of day[m
+[32m+[m[32m    <h3 class="assingment">Assignment 2 :</h3>Create a script that gives a good mornig or good evening message based on the time of day[m
+             1) get the time of day.<br>[m
+             2) get the greeting<br>[m
+ <b class="resultArea" id="cRA2">Test Area</b>[m
+[31m-<h2 class="heading">else if</h2>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    <h2 class="heading">else if</h2>[m
+             <li>Use <em class="codeRed">else if</em> to specify a new condition to test, if the first condition is false.</li>[m
+             so if the 1st conditon is false, and you want to test another condition you use<em class="codeRed"> else if</em>[m
+             <pre>[m
+[36m@@ -87,23 +101,60 @@[m
+                 }[m
+             </pre>[m
+ [m
+[31m-            <h3 class="assingment">Assignment 3 :</h3>Create a script that gives a good mornig or good evening message based on the time of day[m
+[31m-                1) get the time of day.[m
+[31m-                2) get the greeting[m
+[32m+[m[32m            <h3 class="assingment">Assignment 3 :</h3>[m
+[32m+[m[32m            <p>Create a script that gives a good mornig or good evening message based on the time of day.</p>[m
+[32m+[m[32m                1) get the time of day.<br>[m
+[32m+[m[32m                2) get the greeting<br>[m
+     <b class="resultArea" id="cRA3">Test Area</b>[m
+ [m
+[31m-<h2 class="heading">The switch statement</h2>[m
+[31m-    <p>The <em class="codeRed">switch</em> statement is used to perform different actions based on different conditions.</p>[m
+ [m
+[31m-<ul>[m
+[31m-    Use <em class="codeRed">switch</em> to specify many alternative blocks of code to be executed.[m
+[31m-<p>This is how it works:</p>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        <h2 class="heading">The switch statement</h2>[m
+[32m+[m[32m            <p>The <em class="codeRed">switch</em> statement is used to perform different actions based on different conditions.</p>[m
+[32m+[m[32m            <ul>[m
+[32m+[m[32m                Use <em class="codeRed">switch</em> to specify many alternative blocks of code to be executed.[m
+[32m+[m[32m                <p>This is how it works:</p>[m
+ [m
+     <li>The switch expression is evaluated once.</li>[m
+     <li>The value of the expression is compared with the values of each case.</li>[m
+     <li>If there is a match, the associated block of code is executed.</li>[m
+ [m
+ </ul>[m
+[32m+[m[32m<pre>[m
+[32m+[m
+[32m+[m[32m    input id="myInput" type="text" value="Apple"[m
+[32m+[m[32mbutton onclick="checkFruit()">Check Fruit/button[m
+[32m+[m[32m    p id="demo">/p[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    function checkFruit() {[m
+[32m+[m[32m      var text;[m
+[32m+[m[32m      var fruits = document.getElementById("myInput").value;[m
+[32m+[m
+[32m+[m[32m      switch(fruits) {[m
+[32m+[m[32m        case "Banana":[m
+[32m+[m[32m          text = "Banana is good!";[m
+[32m+[m[32m          break;[m
+[32m+[m[32m        case "Orange":[m
+[32m+[m[32m          text = "I am not a fan of orange.";[m
+[32m+[m[32m          break;[m
+[32m+[m[32m        case "Apple":[m
+[32m+[m[32m          text = "How you like them apples?";[m
+[32m+[m[32m          break;[m
+[32m+[m[32m        default:[m
+[32m+[m[32m          text = "I have never heard of that fruit.";[m
+[32m+[m[32m      }[m
+[32m+[m[32m      document.getElementById("demo").innerHTML = text;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</pre>[m
+ [m
+ <p id="test">test here</p>[m
+ <p id="test2">test here</p>[m
