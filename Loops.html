@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Judav Delpardo">
+
+        <title>Loops</title>
+            <link rel="stylesheet" type="text/css" href="style.css"  media="screen, projection">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+
+
+  </head>
+
+
+<body>
+    <div id="container">
+        <a href="index.html">Home</a>
+
+<p id="demo">this will best winner of best vagina</p>
+
+<input id="bill" type="text" name="" value="zuzana">
+<button onclick="pussyCheck()" type="button" name="button">Who's the best</button>
+
+<script type="text/javascript">
+
+function pussyCheck() {
+var whatToSay;
+var bestVagina = document.getElementById("bill").value;
+
+switch (bestVagina) {
+    case "zuzana":
+        whatToSay = "zuzana gregorova has the best vagina";
+        break;
+        case "machalea":
+            whatToSay = "machalea konicheava has the best vagina";
+            break;
+            case "Christina":
+                whatToSay = "Christina makowski has the best vagina";
+                break;
+    default: whatToSay = "the best vagina is def had by some eastern european bitch";
+
+}
+document.getElementById("demo").innerHTML = whatToSay;
+}
+
+</script>
+
+
+
+
+<h1>Loops</h1>
+<p>Loops can execute a block of code a number of times.</p>
+
+<p>Loops execute a block of code a set number of times.</p>
+<p>Loops follow the Initalize, Test, Increment flow</p>
+<pre>
+    var i;
+    for (i = 0; i < cars.length; i++) {
+        text += cars[i] + "<br>";
+    }
+    <b>Note:</b><em class="codeRed">+=</em> is the addition operator.
+    <p>I Like the mnemonic device S.E.T.A</p>
+    Set i <em class="codeRed">var i </em>Creates the variable <em class="codeBlue">i</em>
+    Equal i <em class="codeRed">i = 0; </em>Sets the variable <em class="codeBlue">i</em> equal to 0 before the loop starts (var i = 0).
+    Test i <em class="codeRed">i < cars.length; </em>Defines the condition for the loop to run (i must be less the amount of items in the cars array).
+    Add i <em class="codeRed">i++ </em>Increases the value (i++) each time the code block in the loop has been executed.
+<p id="grab" style="border: 1px solid; padding-bottom:0px; margin-bottom:0px;">
+
+
+<script type="text/javascript">
+    var wannaFuck = ["Zuzana Greorova", "Martha Hunt", "Maryna Linchuk", "Maria Sharapova", "Elsa Hosk", "Irina Shayk", "Romee Strijd"];
+    var text ="";
+    var i;
+
+    for (var i = 0; i < wannaFuck.length; i++) {
+        text += wannaFuck[i] + "<br>";
+    }
+    document.getElementById("grab").innerHTML = text;
+</script>
+
+<script type="text/javascript">
+var i;
+for (i = 0; i < 10; i++) {
+document.getElementById("demo").innerHTML += i + "<br>";
+}
+</script>
+</p>
+    <h3>Different Kinds of Loops</h3>
+
+        <p>JavaScript supports different kinds of loops:<br>
+        for/in - loops through the properties of an object.<br>
+        while - loops through a block of code while a specified condition is true<br>
+        do/while - also loops through a block of code while a specified condition is true<br>
+        </p>
+
+
+    <h2>The For Loop</h2>
+
+<p>The for loop has the following syntax:</p>
+<pre>
+for (statement 1; statement 2; statement 3) {
+    code block to be executed
+}
+</pre>
+<p><b>Statement 1</b> is executed (one time) before the execution of the code block.</p>
+
+<p><b>Statement 2</b> defines the condition for executing the code block.</p>
+
+<p><b>Statement 3</b> is executed (every time) after the code block has been executed.</p>
+
+
+<h2>The While Loop</h2>
+
+The while loop loops through a block of code as long as a specified condition is true.
+
+<pre>
+    var text = "";
+    var i = 0;
+    while (i < 10) {
+        text += "<br>The number is " + i;
+        i++;
+    }
+    document.getElementById("demo").innerHTML = text;
+
+</pre>
+
+
+<h2>The Do/While Loop</h2>
+<p>
+The do/while loop is a variant of the while loop. This loop will execute the code block once,
+before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+</p>
+<pre>
+
+
+    var text = ""
+    var i = 0;
+
+    do {
+        text += "<br>The number is " + i;
+        i++;
+    }
+    while (i < 10);
+
+    document.getElementById("demo").innerHTML = text;
+
+
+</pre>
+
+<h3>Compairing the for and while loops</h3>
+<pre>
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var i = 0;
+var text = "";
+while (cars[i]) {
+    text += cars[i] + "<br>";
+    i++;
+}
+document.getElementById("demo").innerHTML = text;
+
+
+
+
+
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var i = 0;
+var text = "";
+for (;cars[i];) {
+    text += cars[i] + "<br>";
+    i++;
+}
+document.getElementById("demo").innerHTML = text;
+</pre>

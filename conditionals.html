@@ -5,7 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="author" content="Judav Delpardo">
 
-        <title>JavaScript with Judav</title>
+        <title>Conditionals</title>
             <link rel="stylesheet" type="text/css" href="style.css"  media="screen, projection">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
@@ -126,6 +126,20 @@
     <li>If there is a match, the associated block of code is executed.</li>
 
 </ul>
+
+<ol>
+
+<li>Create a input feild element with an id.</li>
+<li>Create a button with an onclick event that triggers a function  <button onclick="myFunction()">Click me</button></li>
+<li>Create a function that has the same name as the onclick event to be triggered when the button is pressed.</li>
+<li>Create the variable to be displayed after each case.</li>
+<li>Create the variable the stores the value of the switch expression</li>
+<li>Set the expression to be evaluated = to the .value property of the feild (its ID)
+
+Set the variable that stores the value of the switch expression = to getElementById in this case the id of the the form field with the .value property (. value sets or returns the value of attributes)
+set up the switch statement with case and breaks</li>
+<li>The last statement which is getElementById().inner html = whatever the thing that came after cas was. </li>
+</ol>
 <pre>
 
     input id="myInput" type="text" value="Apple"
@@ -155,9 +169,46 @@ button onclick="checkFruit()">Check Fruit/button
 
 
 </pre>
-blah hlah
-<p id="test">test here</p>
-<p id="test2">test here</p>
+
+<select id="myField">
+ <option value="huh">huh</option>
+ <option value="shit">shit</option>
+ <option value="wtf">wtf</option>
+ <option value="wtf22">wtf22</option>
+</select>
+<button onclick="blah()" type="button" name="button">work damit</button>
+
+<script type="text/javascript">
+function blah() {
+    var whatToSay;
+    var iDontKnow = document.getElementById("myField").value;
+
+    switch (iDontKnow) {
+        case "huh":
+            whatToSay = "man i dont fucking know";
+            break;
+            case "shit":diff
+            whatToSay = "shit man";
+            break;
+            case "wtf":
+                whatToSay = "still dont understand, i hate git, why am i so sleepy";
+                break;
+                case "wtf22":
+                    whatToSay = "I really fucking hate GIT and GIT hub fuck them both";
+                    break;
+        default: whatToSay = "im getting closer but am shit far away";
+
+    }
+      document.getElementById("test2").innerHTML = whatToSay;
+}
+
+</script>
+
+<br>Note: The <em class="codeRed">.value</em> property sets or returns the value of the option (the value to be sent to the server when the form is submitted).
+
+
+<p id="test">Test Here</p>
+<p id="test2">Test Here</p>
 
 
 
@@ -175,7 +226,14 @@ document.getElementById("test").innerHTML = time1;
         </script>
 
 
-
+<script type="text/javascript">
+var candy = new Date().getHours()
+if( candy < 11) {
+    console.log("i wanna eat some pussy");
+}else {
+    console.log("i wanna eat zuzanna's pussy so bad");
+}
+</script>
 
 
 
