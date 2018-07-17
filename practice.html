@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Judav Delpardo">
+
+        <title>Practice</title>
+            <link rel="stylesheet" type="text/css" href="style.css"  media="screen, projection">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+  </head>
+<h1>Pratice Page</h1>
+<a href="#stringMethods">if else</a>
+<a href="#stringMethods">Switch</a>
+<a href="#stringMethods">String Methods</a>
+
+  <h3><a name="ifElse">Conditional if else Pratice</a></h3>
+  <hr>
+  <p id ="displayChoice2" >This is gonna display whos vagina i wanna enjoy the best.</p>
+  <select id="wannaFuck2" name="">
+      <option value="zuzana">Zuzana Greorova</option>
+      <option value="Martha Hunt">Martha Hunt</option>
+      <option value="Maryna Linchuk">Maryna Linchuk</option>
+      <option value="Maria Sharapova">Maria Sharapova</option>
+      <option value="zuzana">Zuzana Greorova</option>
+  </select>
+  <button onclick="wannaFuck23()" type="button" name="button">blah</button>
+<script type="text/javascript">
+
+function wannaFuck23() {
+var wannaFuck2 = document.getElementById("wannaFuck2").value;
+var blah ="holla";
+    if(wannaFuck2 == "maria Sharapova"){
+        document.getElementById("displayChoice2").innerHTML = "man my rich babbies vagina got even more delicious";
+    } else if (wannaFuck == "zuzana"){
+        document.getElementById("displayChoice2").innerHTML = "i cant stand that little bitch i need to win the lotto";
+    }else{
+        document.getElementById("displayChoice2").innerHTML = "fuck all this";
+    }
+document.getElementById("displayChoice2").innerHTML = wannaFuck23();
+    }
+</script>
+
+  <hr>
+<h3> <a name="switch">Conditional Switch Statement Pratice</a></h3>
+<p id ="displayChoice" >This is gonna display whos vagina i wanna enjoy the best.</p>
+<select id="wannaFuck" name="">
+    <option value="zuzana">Zuzana Greorova</option>
+    <option value="Martha Hunt">Martha Hunt</option>
+    <option value="Maryna Linchuk">Maryna Linchuk</option>
+    <option value="Maria Sharapova">Maria Sharapova</option>
+    <option value="zuzana">Zuzana Greorova</option>
+</select>
+<button onclick="bitches()" type="button" name="button">CLick to see whats up</button>
+
+<script type="text/javascript">
+function bitches(){
+var wannaFuck = document.getElementById("wannaFuck").value;
+var whatToSay;
+switch (wannaFuck) {
+    case "Zuzana":
+        whatToSay = "i've had a thing for Zuzana Greorova for years";
+        break;
+        case "Martha Hunt":
+            whatToSay = "to think that pussy is right next door";
+            break;
+            case "Maryna Linchuk":
+                whatToSay = "That pussy got eaten right upstairs";
+                break;
+                case "Maria Sharapova":
+                    whatToSay = "Can you believe my baby has 135 million";
+                    break;
+    default: whatToSay = "Notice all these bitches are eastern european";
+
+}
+document.getElementById("displayChoice").innerHTML = whatToSay;
+}
+
+  // var wannaFuck = [Zuzana Greorova, Martha Hunt, Maryna Linchuk, Maria Sharapova, Elsa Hosk, Irina Shayk, Romee Strijd];
+
+
+</script>
+<hr>
+<h3><a name="stringMethods"></a>String Methods</h3>
+<p id="demo">Result goes here</p>
+<input id="str1" type="text" name="" value="jame">
+<input id="str2" type="text" name="" value="blake">
+<button onclick="joinStr()" type="button" name="button">Join these 2 strings</button>
+
+<script type="text/javascript">
+
+function joinStr() {
+    var str1 = document.getElementById("str1").value;
+    var str2 = document.getElementById("str2").value;
+    var str3 = str1.concat(str2);
+    document.getElementById("demo").innerHTML = str3;
+}
+
+</script>
