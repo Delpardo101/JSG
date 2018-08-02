@@ -33,6 +33,16 @@
    overflow: hidden;
 }
 
+.left{
+    float: left;
+    border: 1px solid black;
+}
+
+.right{
+    float:none;
+    border: 1px solid black;
+    padding-right:10px;
+}
 .codeBlue{
     color: #70a1ef;
     font-style: italic;

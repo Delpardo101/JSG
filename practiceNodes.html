@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Judav Delpardo">
+ </head>
+    <body>
+
+<img onclick="newDivWithText()" src="images/ekat.jpg" alt="">
+
+<script type="text/javascript">
+
+function newDivWithText(){
+    var newDiv = document.createElement("div");
+    var textForDiv = document.createTextNode("This is a picture of Ekat Kiseleva, I sure would like to hit that");
+    newDiv.appendChild(textForDiv);
+    document.body.appendChild(newDiv);
+}
+</script>
+<p><b>Note: </b>Variables are never in quotes.</p>
+
+<ol>
+    <li>createElement</li>
+    <li>createTextNode</li>
+    <li>appendChild(newTextNode) to createElement</li>
+    <li>appendChild(createElement) to document.body</li>
+</ol>
+
+
+        <!-- <h1>Get a collection of the <body> element's child nodes:</h1>
+
+            <p>Click the button get info about the body element's child nodes.</p>
+
+            <button onclick="myFunction1()">Try it</button>
+
+
+
+
+        <script>
+        function myFunction1() {
+            var c = document.body.childNodes;
+            var txt = "";
+            var i;
+            for (i = 0; i < c.length; i++) {
+                txt = txt + c[i].nodeName + "<br>";
+            }
+
+            document.getElementById("demo").innerHTML = txt;
+        }
+        </script>
+
+
+        <p>Click the button get the node name, node type and node value of the div's first child.</p>
+
+        <div id="myDIV">This is a div element.</div>
+        <br>
+
+        <button onclick="myFunction2()">Try it</button>
+
+        <p id="demo"></p>
+
+        <script>
+        function myFunction2() {
+            var x = document.getElementById("myDIV").firstChild;
+            var txt = "";
+            txt += "The node name: " + x.nodeName + "<br>";
+            txt += "The node value: " + x.nodeValue + "<br>";
+            txt += "The node type: " + x.nodeType;
+            document.getElementById("demo").innerHTML = txt;
+        }
+        </script> -->
+
+
+
+
+
+
+    </body>
+</html>

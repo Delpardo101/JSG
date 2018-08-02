@@ -10,7 +10,12 @@
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
   </head>
+  <a href="index.html">Home</a>
+    <a href="practiceNodes.html">Practice Nodes</a>
 <h1>Pratice Page</h1>
+<div class="left">
+
+
 <a href="#stringMethods">if else</a>
 <a href="#stringMethods">Switch</a>
 <a href="#stringMethods">String Methods</a>
@@ -22,7 +27,7 @@
       <option value="zuzana">Zuzana Greorova</option>
       <option value="Martha Hunt">Martha Hunt</option>
       <option value="Maryna Linchuk">Maryna Linchuk</option>
-      <option value="Maria Sharapova">Maria Sharapova</option>
+      <option value="mariaSharapova">Maria Sharapova</option>
       <option value="zuzana">Zuzana Greorova</option>
   </select>
   <button onclick="wannaFuck23()" type="button" name="button">blah</button>
@@ -30,13 +35,13 @@
 
 function wannaFuck23() {
 var wannaFuck2 = document.getElementById("wannaFuck2").value;
-var blah ="holla";
-    if(wannaFuck2 == "maria Sharapova"){
+
+    if(wannaFuck2 == "mariaSharapova"){
         document.getElementById("displayChoice2").innerHTML = "man my rich babbies vagina got even more delicious";
     } else if (wannaFuck == "zuzana"){
         document.getElementById("displayChoice2").innerHTML = "i cant stand that little bitch i need to win the lotto";
     }else{
-        document.getElementById("displayChoice2").innerHTML = "fuck all this";
+        document.getElementById("displayChoice2").innerHTML = "fuck all this shit";
     }
 document.getElementById("displayChoice2").innerHTML = wannaFuck23();
     }
@@ -98,3 +103,175 @@ function joinStr() {
 }
 
 </script>
+
+
+
+
+<hr>
+<h3>Swithch with the day of the week object </h3>
+    <p>in a Switch statement the expression you evaluate " switch()" is the one where you grab the id with the .value property on it.</p>
+
+<input id="day of the week"type="" name="" value="what is the day">
+<button onclick="trigger()" type="button" name="button">day of the week</button>
+<p id="demo2">blah</p>
+<!-- <script type="text/javascript">
+
+
+function trigger(){
+var day;
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case  6:
+        day = "Saturday";
+        document.getElementById("demo2").innerHTML = "Today is " + day;
+}
+
+</script> -->
+
+
+<hr>
+<h3>Auto Increment loop prectice</h3>
+<p id="demo5">practice shit goes here</p>
+<p id="demo6">practice shit goes here</p>
+<h6>this is Demo 7 practice this alot with doing shit with .length and an array</h6><p id="demo7">demo 7</p>
+<p id="demo8">practice shit goes here</p><p>with the while loops its all about decramentsing at the end, dont forget it all about the shit at the end </p>
+<p>the while loops everything at least once, shit is at the end </p>
+<script type="text/javascript">
+
+var i;
+var text = "";
+for (i = 0; i < 10; i++) {
+    text += "The number is with a for loop" + i + "<br>";
+document.getElementById("demo5").innerHTML = text;
+}
+</script>
+<br>
+<script>
+var i;
+for (i = 5; i <= 50; i = i + 7) {
+    document.getElementById("demo6").innerHTML += i + "<br>";
+}
+</script>
+
+
+<script>
+var text = "";
+var food = ["Pizza", "Beans", "Tacos", "Fish", "Chicken"];
+var i;
+
+for (i = 0; i < food.length; i++) {
+    text += "I love " + food[i] + "<br>";
+}
+
+document.getElementById("demo7").innerHTML = text;
+</script>
+
+
+<script>
+var i = 0;
+while (i <= 9) {
+    document.getElementById("demo8").innerHTML += i + "<br> this is with a while loop";
+    i++;
+}
+</script>
+
+</div><!--end of left div -->
+
+<div class="right">
+ <h3>Scripting with the Dom</h3>
+ <h2>childNodes and NodeType script</h2>
+<h1>To Do List</h1>
+ <ol id="toDoList">
+     <li>Mow the lawn</li>
+     <li>Clean the windows</li>
+     <li>Answer your emails</li>
+      <li>Catch up on porn</li>
+
+ </ol>
+<p >Make sure all thoes are completed by 8pm so you can watch the game.</p>
+
+
+<script>
+function myFunction() {
+    var c = document.body.childNodes;
+    var txt = "";
+    var i;
+    for (i = 0; i < c.length; i++) {
+        txt = txt + c[i].nodeName + "<br>";
+    }
+
+    document.getElementById("demo9").innerHTML = txt;
+}
+</script>
+
+
+
+<script type="text/javascript">
+function countListItems(){
+    var olElements = document.getElementById("toDoList");
+    var count = 0;
+    for (var i = 0; i < olElements.childNodes.length; i++){
+        if(olElements.childNodes[i].nodeType == 1) count++;
+    }
+    alert("the ordered list contains" + count + " items" );
+
+}
+</script>
+<button onclick="myFunction()">Try it</button>
+<p id="demo9">list the amout of child nodes in the body tag</p>
+<!-- <button onclick="countListItems()" type="button" name="button">alert how many items in the to do list</button> -->
+
+
+<h4>Definition and Usage</h4>
+<p>The childNodes property returns a collection of a node's child nodes, as a NodeList object. childNodes is read only. The .length property of the NodeList object is awesome for determining the number of child nodes, then you can loop through all child nodes and extract the info you want.</p>
+<p>The nodes in the collection are sorted as they appear in the source code and can be accessed by index numbers. The index starts at 0.</p>
+
+
+<p>Note: Whitespace inside elements is considered as text, and text is considered as nodes. Comments are also considered as nodes.</p>
+
+<p>Tip: To return a collection of a node's element nodes (excluding text and comment nodes), use the children property.</p>
+
+<p>Tip: element.childNodes[0] will produce the same result as the firstChild property.</p>
+
+<h4>Definition and Usage</h4>
+
+
+<p></p>The nodeType property returns the node type, as a number, of the specified node.This property is read-only.
+
+<ol>
+    <li>Represents an Element</li>
+    <li>Represents an attribute</li>
+    <li>Represents textual content in an element or attribute</li>
+    <li>Represents a CDATA section in a document (text that will NOT be parsed by a parser)</li>
+    <li>Represents an entity reference</li>
+    <li>Represents an entity</li>
+    <li>Represents a processing instruction</li>
+    <li>Represents a comment</li>
+    <li>Represents the entire document (the root-node of the DOM tree)</li>
+    <li>Provides an interface to the entities defined for the document</li>
+    <li>Represents a "lightweight" Document object, which can hold a portion of a document</li>
+    <li>Represents a notation declared in the DTD</li>
+</ol>
+
+
+
+</div><!--end of Right div -->
+</body>
+</html>
