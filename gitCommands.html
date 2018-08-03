@@ -25,7 +25,7 @@
 <a href="https://www.youtube.com/watch?v=7Id1_VfbEKo">YouTube video about how to work with atom </a>
 <h1>The initial git command sequence</h1>
 
-
+<p>in bash red means working<br>green means staging</p>
 <p>1st Add</p>
 <ol>
 
@@ -33,9 +33,11 @@
     <li>cd ~/Desktop/JSG</li>
     <li>ls -la</li>
     <li>git status</li>
+    <li>clear <b> - clears everything and give you a blank command prompt</b></li>
     <li>git add . </li>
     <li>git commit -m “message in here”</li>
     <li>git commit -a <b> - adds everything from working directory stright to repo</b></li>
+    <li>git log --oneline <b> is the best log to use (find out why later)</b></li>
 </ol>
 
 
@@ -57,13 +59,23 @@
 <p>a conflict occurs when there're two changes to the same line or set of lines in two different commits, because then Git can't decide which one to use or how to merge them together and so we get a merge conflict. </p>
 
 
+<p>3rd add</p>
+<ol>
+    <li>git checkout --fileName <b> - takes the file you Named from the repo and brings it to the working directory</b></li>
+    <li>git reset HEAD<b> - creates a new branch</b></li>
+    <li>git checkout nameOfBranchToSwitchToo <b> - switches you to whatever branch you want</b></li>
+    <li>git merge “branch title” <b> - merges which ever 2 branches you want </b></li>
+    <li>git merge --abort is ill <b> - Undos the most recent merge(madd helpful) </b></li>
+    <li>diff master..nameOfNewBranch <b> - compares Different branches</b></li>
+    <li>git branch -d nameOfBranchToBeDeleted<b> - Deletes the branch</b></li>
+
+</ol>
 
 
 
+use git reset HEAD ... to unstage)
 
 
-
-<p>Clear if everything is messy</p>
 
 
 
